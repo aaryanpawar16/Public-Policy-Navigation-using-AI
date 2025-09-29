@@ -1,17 +1,4 @@
 # app.py
-"""
-Full Streamlit File Uploader app (Milestone 3):
-- Original styling (cards, hover animations)
-- CSV / Excel / TXT / Image / PDF previews
-- PDF OCR fallback using pdfplumber + pytesseract (if available)
-- Chunking (configurable size & overlap)
-- Download chunked text as .txt or JSON, download OCR JSON
-- Retrieval: automatic top-N chunk selection for relevance (simple token overlap)
-- Chat interface that sends context + user question to local Ollama via HTTP
-- Hardcoded model: llama3.1:latest (change HARDCODED_OLLAMA_MODEL if needed)
-- Local smarter extractive summarizer fallback when Ollama is unavailable
-"""
-
 import io
 import time
 import json
@@ -41,9 +28,8 @@ try:
 except Exception:
     HAS_TESSERACT = False
 
-# ---------- Configuration (hardcoded model) ----------
 OLLAMA_BASE_URL = "http://localhost:11434"
-HARDCODED_OLLAMA_MODEL = "llama3.1:latest"  # change this to exact installed model if different
+HARDCODED_OLLAMA_MODEL = "llama3.1:latest"  
 
 # ---------- Page config ----------
 st.set_page_config(page_title="📂 File Upload App (Hardcoded Ollama)", page_icon="📂", layout="wide")
@@ -221,13 +207,6 @@ def score_chunk_by_query(chunk: str, query: str) -> float:
     denom = math.sqrt(len(c_tokens)) if len(c_tokens) > 0 else 1.0
     return score / denom
 
-# ---------- Summarization helpers (smarter local fallback) ----------
-# We implement an extractive summarizer:
-#  - Sentence tokenization
-#  - Term frequency across the document
-#  - Sentence scoring = sum(token tf) * position_weight
-#  - Optional query boost: sentences containing query tokens are amplified
-#  - Keep original order when returning selected sentences
 
 # Minimal stopword list (kept small and local to avoid large dependencies)
 _STOPWORDS = {
@@ -283,10 +262,7 @@ def build_term_frequencies(sentences: List[str]) -> Dict[str, int]:
     return tf
 
 def score_sentences(sentences: List[str], query: Optional[str] = None) -> List[float]:
-    """
-    Score each sentence using term frequency and positional bias.
-    If a query is provided, boost sentences containing query tokens.
-    """
+
     tf = build_term_frequencies(sentences)
     total_tokens = sum(tf.values()) or 1
     # normalize tf to avoid extremely large magnitudes
