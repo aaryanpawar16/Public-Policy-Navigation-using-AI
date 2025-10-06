@@ -37,7 +37,6 @@ The application extracts text from PDFs, splits it into smaller chunks, and enab
 📦 Public-Policy-Navigation-AI
 ┣ 📜 app.py # Streamlit application
 ┣ 📜 README.md # Documentation (this file)
-┣ 📂 outputs # Chunked JSON files (auto-generated)
 
 yaml
 Copy code
