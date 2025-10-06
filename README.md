@@ -38,9 +38,6 @@ The application extracts text from PDFs, splits it into smaller chunks, and enab
 ┣ 📜 app.py # Streamlit application
 ┣ 📜 README.md # Documentation (this file)
 
-yaml
-Copy code
-
 ---
 
 ## ▶️ How to Run
