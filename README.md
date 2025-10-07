@@ -45,18 +45,9 @@ The application extracts text from PDFs, splits it into smaller chunks, and enab
    ```bash
    git clone https://github.com/SATYA-916/Public-Policy-Navigation-AI.git
    cd Public-Policy-Navigation-AI
-Install dependencies:
 
-bash
-Copy code
-pip install -r requirements.txt
 Run the app:
-
-bash
-Copy code
 streamlit run app.py
-📜 Certificate
-(Will be added after completion of internship)
 
 ## 🔖 Tags
 `#AI` `#Internship` `#InfosysSpringboard` `#Python`
