@@ -33,10 +33,11 @@ The application extracts text from PDFs, splits it into smaller chunks, and enab
 
 
 
-## 📂 Project Structure
-📦 Public-Policy-Navigation-AI
-┣ 📜 app.py # Streamlit application
-┣ 📜 README.md # Documentation (this file)
+## 📂 Project Structure <br>
+📦 Public-Policy-Navigation-AI <br>
+┣ 📜 app.py # Streamlit application <br>
+┣ 📜 README.md # Documentation 
+
 
 ---
 
