@@ -44,8 +44,8 @@ The application extracts text from PDFs, splits it into smaller chunks, and enab
 ## ▶️ How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/SATYA-916/Public-Policy-Navigation-AI.git
-   cd Public-Policy-Navigation-AI
+   git clone https://github.com/aaryanpawar16/Public-Policy-Navigation-using-AI.git
+   cd Public-Policy-Navigation-using-AI
 
 Run the app:
 streamlit run app.py
