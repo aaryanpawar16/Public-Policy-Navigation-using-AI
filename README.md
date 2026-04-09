@@ -63,26 +63,30 @@ streamlit run app.py
 Run the app:
 
 streamlit run app.py
+
 💡 Use Cases
+
 📜 Simplifying government policy documents
+
 🎓 Academic research assistance
+
 ⚖️ Legal document exploration
+
 🏢 Corporate compliance analysis
+
 🔮 Future Improvements
+
 🌐 Multi-language support
+
 📊 Advanced search & filtering
+
 🧠 Improved chunking using embeddings
+
 🔗 Integration with vector databases (FAISS / Chroma)
+
 🎤 Voice-based query interface
-🤝 Contributing
 
-Contributions are welcome!
 
-Fork the repository
-Create your feature branch
-Commit your changes
-Push to the branch
-Open a Pull Request
 📜 License
 
 This project is licensed under the MIT License – feel free to use and modify.
