@@ -43,12 +43,47 @@ The application extracts text from PDFs, splits it into smaller chunks, and enab
 
 ## ▶️ How to Run
 1. Clone the repository:
-   ```bash
+   
    git clone https://github.com/aaryanpawar16/Public-Policy-Navigation-using-AI.git
    cd Public-Policy-Navigation-using-AI
 
 Run the app:
 streamlit run app.py
+
+2. Install dependencies:
+   
+   pip install streamlit pdfplumber
+
+3.Ensure Ollama is installed and running:
+
+   ollama run llama3
+
+Run the app:
+
+streamlit run app.py
+💡 Use Cases
+📜 Simplifying government policy documents
+🎓 Academic research assistance
+⚖️ Legal document exploration
+🏢 Corporate compliance analysis
+🔮 Future Improvements
+🌐 Multi-language support
+📊 Advanced search & filtering
+🧠 Improved chunking using embeddings
+🔗 Integration with vector databases (FAISS / Chroma)
+🎤 Voice-based query interface
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repository
+Create your feature branch
+Commit your changes
+Push to the branch
+Open a Pull Request
+📜 License
+
+This project is licensed under the MIT License – feel free to use and modify.
 
 ## 🔖 Tags
 `#AI` `#Internship` `#InfosysSpringboard` `#Python`
