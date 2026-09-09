@@ -62,8 +62,7 @@ Before running the app, make sure the following are installed **on your system**
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
-   cd <repo-folder>
+   git clone [https://github.com/aaryanpawar16/Public-Policy-Navigation-using-AI/tree/main/Aaryna%20Pawar](https://github.com/aaryanpawar16/Public-Policy-Navigation-using-AI/tree/main/Aaryna%20Pawar)
    ```
 
 2. **Install Python dependencies**
